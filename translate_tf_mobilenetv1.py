@@ -1,7 +1,7 @@
 import torch
 import sys
 
-from vision.nn.mobilenet import MobileNetV1
+from pytorch_ssd.nn.mobilenet import MobileNetV1
 from extract_tf_weights import read_weights
 
 

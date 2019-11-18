@@ -8,20 +8,20 @@ import torch
 from torch.utils.data import DataLoader, ConcatDataset
 from torch.optim.lr_scheduler import CosineAnnealingLR, MultiStepLR
 
-from vision.utils.misc import str2bool, Timer, freeze_net_layers, store_labels
-from vision.ssd.ssd import MatchPrior
-from vision.ssd.vgg_ssd import create_vgg_ssd
-from vision.ssd.mobilenetv1_ssd import create_mobilenetv1_ssd
-from vision.ssd.mobilenetv1_ssd_lite import create_mobilenetv1_ssd_lite
-from vision.ssd.mobilenet_v2_ssd_lite import create_mobilenetv2_ssd_lite
-from vision.ssd.squeezenet_ssd_lite import create_squeezenet_ssd_lite
-from vision.datasets.voc_dataset import VOCDataset
-from vision.datasets.open_images import OpenImagesDataset
-from vision.nn.multibox_loss import MultiboxLoss
-from vision.ssd.config import vgg_ssd_config
-from vision.ssd.config import mobilenetv1_ssd_config
-from vision.ssd.config import squeezenet_ssd_config
-from vision.ssd.data_preprocessing import TrainAugmentation, TestTransform
+from pytorch_ssd.utils.misc import str2bool, Timer, freeze_net_layers, store_labels
+from pytorch_ssd.ssd.ssd import MatchPrior
+from pytorch_ssd.ssd.vgg_ssd import create_vgg_ssd
+from pytorch_ssd.ssd.mobilenetv1_ssd import create_mobilenetv1_ssd
+from pytorch_ssd.ssd.mobilenetv1_ssd_lite import create_mobilenetv1_ssd_lite
+from pytorch_ssd.ssd.mobilenet_v2_ssd_lite import create_mobilenetv2_ssd_lite
+from pytorch_ssd.ssd.squeezenet_ssd_lite import create_squeezenet_ssd_lite
+from pytorch_ssd.datasets.voc_dataset import VOCDataset
+from pytorch_ssd.datasets.open_images import OpenImagesDataset
+from pytorch_ssd.nn.multibox_loss import MultiboxLoss
+from pytorch_ssd.ssd.config import vgg_ssd_config
+from pytorch_ssd.ssd.config import mobilenetv1_ssd_config
+from pytorch_ssd.ssd.config import squeezenet_ssd_config
+from pytorch_ssd.ssd.data_preprocessing import TrainAugmentation, TestTransform
 
 parser = argparse.ArgumentParser(
     description='Single Shot MultiBox Detector Training With Pytorch')

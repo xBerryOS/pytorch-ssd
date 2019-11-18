@@ -8,9 +8,9 @@ import logging
 import sys
 from tensorboardX import SummaryWriter
 
-from vision.prunning.prunner import ModelPrunner
-from vision.utils.misc import str2bool
-from vision.nn.alexnet import alexnet
+from pytorch_ssd.prunning.prunner import ModelPrunner
+from pytorch_ssd.utils.misc import str2bool
+from pytorch_ssd.nn.alexnet import alexnet
 
 
 parser = argparse.ArgumentParser(description='Demonstration of Pruning AlexNet')

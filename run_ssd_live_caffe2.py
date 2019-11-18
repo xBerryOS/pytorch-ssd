@@ -1,6 +1,6 @@
-import vision.utils.box_utils_numpy as box_utils
-from vision.utils.misc import Timer
-from vision.ssd.config.mobilenetv1_ssd_config import specs, center_variance, size_variance
+import pytorch_ssd.utils.box_utils_numpy as box_utils
+from pytorch_ssd.utils.misc import Timer
+from pytorch_ssd.ssd.config.mobilenetv1_ssd_config import specs, center_variance, size_variance
 
 
 import cv2
